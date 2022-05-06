@@ -49,9 +49,9 @@ $(function () {
             success: function (res) {
                 if (res.status !== 0) return layer.msg(res.message)
                 layer.msg(res.message)
-                setTimeout(function () {
-                    location.href = './index.html'
-                }, 1000)
+                // 将token值存入本地
+                localStorage.setItem('token', res.token)
+                location.href = './index.html'
             }
         })
     }
