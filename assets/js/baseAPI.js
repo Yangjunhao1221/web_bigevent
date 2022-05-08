@@ -12,9 +12,10 @@ $(function () {
         }
         // 统一添加成功失败回调
         options.complete = function (res) {
+
             if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
                 localStorage.removeItem('token')
-                location.href = '/login.html'
+                return location.href = '/login.html'
             }
         }
     })
