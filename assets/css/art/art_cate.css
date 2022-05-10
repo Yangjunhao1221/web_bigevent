@@ -1,0 +1,30 @@
+html,
+body {
+    margin: 0;
+    padding: 15px;
+}
+
+body {
+    background-color: #f2f3f5;
+}
+
+.layui-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tanForm,
+#tanForm2 {
+    padding: 20px;
+    padding-right: 60px;
+}
+
+.btn {
+
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: right;
+
+}

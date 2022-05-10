@@ -3,6 +3,10 @@
     width: 500px;
 }
 
+body {
+    background-color: #f2f3f5;
+}
+
 /* 设置按钮行的样式 */
 .row2 {
     display: flex;

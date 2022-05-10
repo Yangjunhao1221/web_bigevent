@@ -6,7 +6,7 @@ $(function () {
             success: function (res) {
                 if (res.status !== 0) return layer.msg('获取用户数据失败')
                 randerUserdata(res)
-                console.log(res)
+
             }
         })
     }

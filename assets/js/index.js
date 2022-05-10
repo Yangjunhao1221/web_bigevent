@@ -13,13 +13,11 @@ $(function () {
     })
 })
 function getuserDate() {
-    console.log(1);
-    $.ajax({
 
+    $.ajax({
         method: 'GET',
         url: '/my/userinfo',
         success: function (res) {
-            console.log(res)
             if (res.status !== 0) return layer.msg('获取用户数据失败')
             renderAvatar(res.data)
         },
